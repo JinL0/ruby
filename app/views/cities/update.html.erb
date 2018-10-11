@@ -1,0 +1,17 @@
+<%= form_with local: true, method: "get" do |f| %>
+   <h1>
+   City name: <br>
+   <%= f.text_field :city %>
+   <%= f.submit %>
+   </h1>
+   <h1>
+   Temperture: <br>
+   <%= f.text_field :temperature %>
+   <%= f.submit %>
+   </h1>
+   <h1>
+   Discrution: <br>
+   <%= f.text_field :description %>
+   <%= f.submit %>
+   </h1>
+ <% end %>

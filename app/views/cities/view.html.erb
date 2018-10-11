@@ -1,12 +1,10 @@
 <% if not @cities.nil? %>
-	<% @cities.each do |c| %>
-	<% if not c.nil? %>
-		<h1> <%= c.name %></h1>
-		<p>
-			It's <%= c.temperature %>°F
-			and it looks like <%= c.description %>
-		</p>
-	<% end %>
+	<% @cities.each do |key, array| %>
+     <h1>City name: <%= array.name %> </h1>
+     <p>
+		It's <%= array.weather[:temperature] %>°F
+		and it looks like <%= array.weather[:description] %>
+	</p>
 	<% end %>
 <% else %>
    <h1>Empty city list please create one </h1>

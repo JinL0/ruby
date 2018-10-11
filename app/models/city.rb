@@ -21,9 +21,8 @@ class City
 	def update(update_params)
 		# Your code here, for Task 4
 		# Use update_params (a hash) to update the model
-		@name = update_params[:name]
-		@landmark = update_params[:landmark]
-		@population = update_params[:population]
-		@weather = WeatherService.get(@name)
+	    @weather[:temperature] = update_params[:temperature]
+	    @weather[:description] = update_params[:description]
+	    save
 	end
 end
