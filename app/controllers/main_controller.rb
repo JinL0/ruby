@@ -15,11 +15,5 @@ class MainController < ApplicationController
 			description: @w[:description]
 		)
 		city.save
-	berkeley = City.new(
-		name: "Berkeley",
-		description: "light clouds",
-		temperature: 76.5
-	)
-	berkeley.save
 	end
 end
