@@ -1,6 +1,11 @@
 # Q0: Why are these two errors being thrown?
+ActiveRecord::PendingMigrationError
+Solve method: bin/rails db:migrate RAILS_ENV=development
+uninitialized constant HomeController::Pokemon
 
-# Q1: How are the random Pokemon appearing? What is the common factor between all the possible Pokemon that appear? *
+
+# Q1: How are the random Pokemon appearing? What is the common factor between all the possible Pokemon that appear? 
+A wild Pikachu has appeared!
 
 # Question 2a: What does the following line do "<%= button_to "Throw a Pokeball!", capture_path(id: @pokemon), :class => "button medium", :method => :patch %>"? Be specific about what "capture_path(id: @pokemon)" is doing. If you're having trouble, look at the Help section in the README.
 
