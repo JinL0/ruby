@@ -1,0 +1,4 @@
+<%= simple_form_for @pokemon, :url => new_path do |p| %>
+  <%= p.input :name %>
+  <%= p.button :submit , class: "create-pokemon-btn" %>
+<% end %>

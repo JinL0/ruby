@@ -4,4 +4,5 @@
 <% @pokemons.each do |p| %>
 	<h4><%= p.name%></h4>
 	<h4><%= p.level%></h4>
+	<h4><%= button_to "Damage!", damage_path(id: p), :class => "button medium", :method =>:patch %></h4>
 <% end %>
