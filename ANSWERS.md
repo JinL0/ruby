@@ -16,10 +16,14 @@ Add the throw a pokeball button, pass the pokemon in to capture method.
 capture_path(pok) pass the pok in the capture, then we change the tranier id to current traner
 
 # Question 3: What would you name your own Pokemon?
+Bulbasaur
 
 # Question 4: What did you pass into the redirect_to? If it is a path, what did that path need? If it is not a path, why is it okay not to have a path here?
+controller action id 
+redirect to a dynmaic path with trianer's id and show this trianer
 
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
+I put in my create function in order to check if this pokemon is vaild or not
 
 # Give us feedback on the project and decal below!
 
